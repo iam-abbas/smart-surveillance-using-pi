@@ -1,7 +1,4 @@
-# smart-surveillance-using-pi
+# Pi based suspicious activity detection implementation using SSD/Mobile Net
 
 ### Abstract
-With growing crime rate there is also an ascent in the number of theft/roberries per year.
-Video Surveillance have been in use since over a decade now but there has been no large scale developement of home security systems.
-Our hack itends to solve this problem by using a compact model of Machine Learning and Image Processing with secured data encryption to prevent malicious attacks.
-
+In recent times with the rapidly increasing crime rate, video surveillance has become the need of the hour. To address this problem, we have come up with a solution of smart surveillance system for certain places like homes, malls, Jewellery shops etc when the human presence is not available. At such places, it is not worth to continuously monitor the area with the cameras . This wastes the power consumption as well as the storage required for the footage. Our model will specifically detect human presence using Image processing even in low light conditions. The security system is automatically triggered using an approach that mixes active (ARP scan) and passive (packet capture) detection over the Wi-Fi. On detection of any movement the cameras will trigger the surveillance. The proposed system captures information and transmits it via Internet to smart phones and laptops, taking various feedback from the user on confirmation of any suspicious activity, our bot automatically informs nearby police station, alerts neighbours and guard to take immediate action. To preserve privacy and securely transmit the video footage over the network, we are using blowfish encryption and decryption algorithm to provide extra security from hackers.
