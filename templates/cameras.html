@@ -33,13 +33,13 @@
           </a>
         </div>
         <ul class="nav">
-          <li class="active ">
+          <li >
             <a href="./">
               <i class="tim-icons icon-chart-pie-36"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="/cameras">
               <i class="tim-icons icon-camera-18"></i>
               <p>Cameras</p>
@@ -72,7 +72,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+            <a class="navbar-brand" href="javascript:void(0)">Cameras</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -104,60 +104,93 @@
       </div>
       <!-- End Navbar -->
       <div class="content">
-
-
-
-<div class="row">
-          <div class="col-lg-6">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Video Surveillance</h5>
-                    <h2 class="card-title">Live Feed</h2>
-<p class="red-dot" style="
-    background: #ff3f3f;
-    width: 8px;
-    border-radius: 6px;
-    height: 8px;
-    padding: 0;
-    margin: -30px;
-    margin-left: 130px;
-    margin-bottom: 10px;
-    position: relative;
-"></p>
-            
-      </div>
-                  
-                </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h4 class="card-title">Available Cameras</h4>
               </div>
               <div class="card-body">
-                <img style="-webkit-user-select: none;margin: auto;padding: 20px;border-radius:15px;" src="/video_feed">
+                <div class="table-responsive" style="overflow:unset;">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
 
+                        <th>
+                          Camera
+                        </th>
+                        <th>
+                          Location
+                        </th>
+                        <th class="text-center">
+                          Status
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Cam-1
+                        </td>
+                        <td>
+                          HackSRM 19 - Hall
+                        </td>
+                        <td class="text-center">
+                          Active
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cam-2
+                        </td>
+                        <td>
+                          Jewelry Store - Hall
+                        </td>
+                        <td class="text-center">
+                          Inactive
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cam-3
+                        </td>
+                        <td>
+                          Home - Bedroom
+                        </td>
+                        <td class="text-center">
+                          Inactive
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cam-4
+                        </td>
+                        <td>
+                          Home - Living Room
+                        </td>
+                        <td class="text-center">
+                          Inactive
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cam-5
+                        </td>
+                        <td>
+                          Home - Entrance
+                        </td>
+                        <td class="text-center">
+                          Inactive
+                        </td>
+                      </tr>
+               
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-
-                    <div class="col-lg-6">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Data Monitoring</h5>
-                    <h2 class="card-title">Recent Captures</h2>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="card-body">
-<img style="-webkit-user-select: none;margin: auto;padding: 15px;border-radius:15px;" src="static/images/1.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-       
-        
+     
       </div>
       <footer class="footer">
         <div class="container-fluid">

@@ -17,7 +17,6 @@ def handle(msg):
         bot.sendMessage(chat_id, "Calling Police")
     if command == '/no':
         bot.sendMessage(chat_id, "Ok ignoring now, send /cancel to stop monitoring")
-    if command == '/cancel':
-        bot.sendMessage(chat_id, "Aborted Monitoring. Click /start to start again")
 
 
+bot = telepot.Bot("987039509:AAHX_HjTmoaqG_9ZUiGMBKzuBrq7-d9_Xcg")

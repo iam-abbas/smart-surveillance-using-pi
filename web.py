@@ -3,36 +3,37 @@ import cv2
 import numpy as np
 
 
-from main import *
-
-
-def adjust_gamma(image, gamma=1.0):
-    # build a lookup table mapping the pixel values [0, 255] to
-    # their adjusted gamma values
-    invGamma = 1.0 / gamma
-    table = np.array([((i / 255.0) ** invGamma) * 255
-        for i in np.arange(0, 256)]).astype("uint8")
- 
-    # apply gamma correction using the lookup table
-    return cv2.LUT(image, table)
-
-
-
 app = Flask(__name__)
-video = cap
+video = cv2.VideoCapture(0)
 video.set(16, 854)
 video.set(9, 480)
 
-
 @app.route('/')
 def index():
-   return render_template('index.html')
+    """Video streaming home page."""
+    return render_template('index.html')
+
+@app.route('/cameras')
+def camera():
+    """Video streaming home page."""
+    return render_template('cameras.html')
+
+@app.route('/alerts')
+def alerts():
+    """Video streaming home page."""
+    return render_template('alerts.html')
+
+@app.route('/settings')
+def settings():
+    """Video streaming home page."""
+    return render_template('settings.html')
+
 
 def gen():
     """Video streaming generator function."""
     while True:
         rval, frame = video.read()
-        cv2.imwrite('t.jpg', adjust_gamma(frame, 1.5))
+        cv2.imwrite('t.jpg', frame)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + open('t.jpg', 'rb').read() + b'\r\n')
 
@@ -43,6 +44,5 @@ def video_feed():
     return Response(gen(),mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-
 if __name__ == '__main__':
-   app.run(debug = True, host = '0.0.0.0',port=5005)
+    app.run(host='0.0.0.0', port=5005, threaded=True)

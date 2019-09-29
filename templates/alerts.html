@@ -33,19 +33,19 @@
           </a>
         </div>
         <ul class="nav">
-          <li class="active ">
+          <li >
             <a href="./">
               <i class="tim-icons icon-chart-pie-36"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
+          <li >
             <a href="/cameras">
               <i class="tim-icons icon-camera-18"></i>
               <p>Cameras</p>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="/alerts">
               <i class="tim-icons icon-alert-circle-exc"></i>
               <p>Alerts</p>
@@ -72,7 +72,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+            <a class="navbar-brand" href="javascript:void(0)">Alerts</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -104,60 +104,67 @@
       </div>
       <!-- End Navbar -->
       <div class="content">
-
-
-
-<div class="row">
-          <div class="col-lg-6">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Video Surveillance</h5>
-                    <h2 class="card-title">Live Feed</h2>
-<p class="red-dot" style="
-    background: #ff3f3f;
-    width: 8px;
-    border-radius: 6px;
-    height: 8px;
-    padding: 0;
-    margin: -30px;
-    margin-left: 130px;
-    margin-bottom: 10px;
-    position: relative;
-"></p>
-            
-      </div>
-                  
-                </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">InsPi Logs</h4>
               </div>
               <div class="card-body">
-                <img style="-webkit-user-select: none;margin: auto;padding: 20px;border-radius:15px;" src="/video_feed">
-
+                <div class="alert alert-info">
+                  <span>HackSRM 19 - Hall (Cam-1) has been activated by Abbas</span>
+                </div>
+                <div class="alert alert-info">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span>HackSRM 19 - Hall has been aborted by Abbas</span>
+                </div>
+                <div class="alert alert-info alert-with-icon" data-notify="container">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span data-notify="icon" class="tim-icons icon-bell-55"></span>
+                  <span data-notify="message">HackSRM 19 - Hall (Cam-1) started running successfully</span>
+                </div>
+            </div>
+          </div>
+         </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Camera Updates</h4>
+              </div>
+              <div class="card-body">
+                <div class="alert alert-info">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Info - </b> Firmware update required. Please install now</span>
+                </div>
+                <div class="alert alert-success">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Success - </b> Recordings have been sent your mail address successfully</span>
+                </div>
+                <div class="alert alert-warning">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Warning - </b> Detected Motion in HackSRM 19 - Hall (Cam-1)</span>
+                </div>
+                <div class="alert alert-danger">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="tim-icons icon-simple-remove"></i>
+                  </button>
+                  <span><b> Danger - </b> Invader detected calling Police.</span>
+                </div>
               </div>
             </div>
           </div>
-
-                    <div class="col-lg-6">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Data Monitoring</h5>
-                    <h2 class="card-title">Recent Captures</h2>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="card-body">
-<img style="-webkit-user-select: none;margin: auto;padding: 15px;border-radius:15px;" src="static/images/1.jpg">
-              </div>
-            </div>
-          </div>
+         
         </div>
-
-       
-        
       </div>
       <footer class="footer">
         <div class="container-fluid">
