@@ -13,7 +13,7 @@ We came up with this compact and complete solution to this problem all packed in
 
 The Model is used pre-trained weights of Single Shot Multibox Detector with MobileNet dataset. It can be used to detect various objects but we limited it to humans. However, the algorithm cannot detect objects under low light conditions because there is not enough exposure to identify the shape of the contents. We used methods like automatic gamma adjustments and light intensity correction to tackle this problem and results turned out to be amazing. Here is an example of the model detecting a person under very low light.
 
-![InsPi](https://raw.githubusercontent.com/iam-abbas/smart-surveillance-using-pi/master/webimg/3.jpg)
+![InsPi](https://raw.githubusercontent.com/iam-abbas/smart-surveillance-using-pi/master/webimg/3.jpg?token=AKAOFGNNVDHIWS2IUPM2E625VVOV6)
 
 
 ### Raspberry Pi
