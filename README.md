@@ -11,7 +11,7 @@ We came up with this compact and complete solution to this problem all packed in
 
 ### The Model
 
-The Model is used pre-trained weights of Single Shot Multibox Detector with MobileNet dataset. It can be used to detect various objects but we limited it to humans. However, the algorithm cannot detect objects under low light conditions because there is not enough exposure to identify the shape of the contents. We used methods like automatic gamma adjustments and light intensity correction to tackle this problem and results turned out to be amazing. Here is an example of the model detecting a person under very low light.
+The Model used is pre-trained weights of Single Shot Multibox Detector with MobileNet dataset. It can be used to detect various objects but we limited it to humans. However, the algorithm cannot detect objects under low light conditions because there is not enough exposure to identify the shape of the contents. We used methods like automatic gamma adjustments and light intensity correction to tackle this problem and results turned out to be amazing. Here is an example of the model detecting a person under very low light.
 
 ![InsPi](https://raw.githubusercontent.com/iam-abbas/smart-surveillance-using-pi/master/webimg/3.jpg?token=AKAOFGNNVDHIWS2IUPM2E625VVOV6)
 
@@ -64,7 +64,7 @@ Just clone this repository and run ```main.py```
 - A cleaner script
 - Automatic trigger system using ARN
 - Better Implementation of Telegram Bot
-- Implementation of Twilli API for phone calls
+- Implementation of Twilio API for phone calls
 - More features on web portal.
 - Cloud based implementation of model to reduce load on Pi
 
