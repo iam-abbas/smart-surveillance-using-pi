@@ -75,4 +75,4 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 #time.sleep(10)
-os.system('python3 web.py')
+os.system('python web.py')

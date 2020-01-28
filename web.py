@@ -4,6 +4,7 @@ import numpy as np
 
 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 video = cv2.VideoCapture(0)
 video.set(16, 854)
 video.set(9, 480)
@@ -45,4 +46,4 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5005, threaded=True)
+    app.run(host='0.0.0.0', port=5005, threaded=True, debug=True)
