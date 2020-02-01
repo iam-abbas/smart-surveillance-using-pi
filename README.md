@@ -63,8 +63,11 @@ A Flask server has been set up with shows live feed and Recent Captures. For now
 - Monitor
 
 ### How to run?
-
-Just clone this repository and run ```main.py```
+First let's install some libraies
+``` 
+$ pip install opencv-python numpy telepot
+```
+and just run ```main.py```
 
 
 ## Future Updates
