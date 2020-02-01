@@ -1,6 +1,14 @@
-# InsPi
 
-## Implementation of person detection using SSD-MobileNet on Raspberry Pi platform
+<p align="center">
+<img style="padding:10px;" src="https://img.shields.io/github/stars/iam-abbas/smart-surveillance-using-pi?style=flat-square">
+<img style="padding:10px;" src="https://img.shields.io/github/license/iam-abbas/smart-surveillance-using-pi?style=flat-square">
+</p>
+
+### Awards Collected
+- 🥇Gold Medal - SRM AP Research Conference 2020
+
+# Implementation of person detection using SSD-MobileNet on Microcomputer platform
+
 
 ### Abstract
 
