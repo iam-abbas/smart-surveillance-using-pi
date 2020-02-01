@@ -80,4 +80,6 @@ and just run ```main.py```
 - Cloud based implementation of model to reduce load on Pi
 
 
+## What Am I currently Wokring On?
 
+I am trying to create a mesh network of cameras with a single super node which is Raspberry Pi and run the same model across diferent cameras. You can help too! For this repository, create a new branch and get started! I will feature you on this repository.
