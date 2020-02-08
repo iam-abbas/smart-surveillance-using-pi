@@ -32,6 +32,7 @@ We used Raspberry Pi as our main platform for this project due to the following 
 - Low Cost
 - Efficient
 - Can connect to devices wirelessly
+- Very Accurate
 
 ### Alert System
 
